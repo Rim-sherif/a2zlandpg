@@ -173,8 +173,6 @@ footer
   margin-bottom: 150px;
   background-color: white;
   border-radius: 80px;
- 
- 
   
 }
 .icon-btn{
@@ -210,8 +208,8 @@ footer
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #2f2f2f;
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .a:hover {
@@ -430,7 +428,7 @@ footer
     top: -40px;
   }
 }
-.btn {
+.hero .btn {
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 30px;
@@ -439,47 +437,48 @@ footer
   border-color: #2f2f2f;
 }
 
-.btn:hover {
+.hero .btn:hover {
   color: #ffffff;
   background: #222222;
   border-color: #222222;
 }
 
-.btn:active,
-.btn:focus {
+.hero .btn:active,
+.hero .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.btn.btn-primary {
+.hero .btn.btn-primary {
   background: #3b5d50;
   border-color: #3b5d50;
 }
 
-.btn.btn-primary:hover {
+.hero .btn.btn-primary:hover {
   background: #314d43;
   border-color: #314d43;
 }
 
-.btn.btn-secondary {
+.hero .btn.btn-secondary {
   color: #2f2f2f;
   background: #f9bf29;
   border-color: #f9bf29;
 }
 
-.btn.btn-secondary:hover {
+.hero .btn.btn-secondary:hover {
   background: #f8b810;
   border-color: #f8b810;
 }
 
-.btn.btn-white-outline {
+.hero .btn.btn-white-outline {
   background: transparent;
   border-width: 2px;
+  color: white;
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.btn.btn-white-outline:hover {
+.hero .btn.btn-white-outline:hover {
   border-color: white;
   color: #ffffff;
 }
@@ -522,29 +521,29 @@ footer
 
 .we-help-section .imgs-grid .grid.grid-1 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 18;
+
   grid-column: 1 / span 18;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 27;
+
   grid-row: 1 / span 27;
 }
 
 .we-help-section .imgs-grid .grid.grid-2 {
   -ms-grid-column: 19;
-  -ms-grid-column-span: 27;
+
   grid-column: 19 / span 27;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 5;
+ 
   grid-row: 1 / span 5;
   padding-left: 20px;
 }
 
 .we-help-section .imgs-grid .grid.grid-3 {
   -ms-grid-column: 14;
-  -ms-grid-column-span: 16;
+
   grid-column: 14 / span 16;
   -ms-grid-row: 6;
-  -ms-grid-row-span: 27;
+
   grid-row: 6 / span 27;
   padding-top: 20px;
 }
@@ -1432,9 +1431,11 @@ svg {
   padding: 10px;
   border-radius: 10px;
   border-color: #E0E1E8;
- 
- 
-}
+  transition: .3s all ease;
+ }
+
+
+
 .services img{
   width: 50px;
   height:50px;
@@ -1452,9 +1453,8 @@ svg {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
-.card :hover{
- 
-}
+
+
 
 .card-img-top {
   width: 100%;
@@ -1502,14 +1502,20 @@ svg {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  margin: 3px;
+  margin: 10px;
+  
+  
 
  
 }
 
-.btn-primary {
-  background-color: #007bff;
+.card .btn-bn {
+  background-color: #051628;
   color: #fff;
+}
+.card .btn-bn:hover {
+  background-color: #042548;
+  
 }
 
 .btn-primary:hover {
@@ -1524,3 +1530,83 @@ svg {
 .btn-success:hover {
   background-color: #218838;
 }
+
+/*checkout*/
+.btn-checkout{
+  color: white;
+  background-color: #051628 ;
+}
+
+
+
+/*cart*/
+.our-shop h2 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 38.05px;
+
+}
+
+.our-shop h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.38px;
+
+}
+
+.our-shop p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17.45px;
+  color: #5E5D6C8F;
+
+
+}
+
+.our-shop h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.86px;
+
+}
+
+.our-shop .Totally .price h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17.91px;
+  color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.our-shop .Totally .price h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.38px;
+
+}
+
+.our-shop .btn-cart .btn-1 {
+  height: 48px;
+  border-radius: 33px;
+  border: 1px;
+  background: rgba(0, 0, 0, 1);
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
+
+}
+
+.our-shop .btn-cart .btn-2 {
+  height: 48px;
+  border-radius: 33px;
+  border: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+

@@ -42,11 +42,7 @@ export default function Navbar() {
                     Shop
                   </Link>
                 </li>
-                <li>
-                  <Link className="nav-link a" to="about.html">
-                    About us
-                  </Link>
-                </li>
+          
                 <li>
                   <Link className="nav-link a" to="/services">
                     Services
@@ -101,7 +97,7 @@ export default function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item ">
-                  <Link className="nav-link a mt-2" to="cart.html">
+                  <Link className="nav-link a mt-2" to="/cart">
                     <img src={img2} alt="" />
                   </Link>
                 </li>

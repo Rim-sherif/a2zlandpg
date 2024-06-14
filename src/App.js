@@ -17,7 +17,9 @@ import Exploring from "./Components/Exploring/Exploring";
 import TopSelling from "./Components/TopSelling/TopSelling";
 import NavTabs from "./Components/navTabs/navTabs";
 import Products from "./Components/Products/Products";
-import Services from './Components/Services/Services'
+import Services from './Components/Services/Services';
+import CheckOut from "./Components/checkOut/checkOut";
+
 
 
 // import { useContext, useEffect } from 'react';
@@ -43,18 +45,17 @@ const Router = createBrowserRouter([
       { path: "navTabs", element: <NavTabs /> },
       { path: "prducts", element: <Products/> },
       { path: "services", element: <Services/> },
+      { path: "profile", element: <Profile/> },
+      { path: "cart", element: <Cart /> },
+      { path: "checkout", element: <CheckOut /> },
       {
         path: "aboutus",
         element: <Layout2 />,
         children: [
           { path: "", element: <AboutUs /> },
-          
           { path: "navbar", element: <Navbar /> },
           
-          { path: "cart", element: <Cart /> },
           
-          
-          { path: "profile", element: <Profile /> }
         ],
       },
     ],
@@ -72,7 +73,7 @@ export default function App() {
   //   }
   // },[])
   return (
-    <div className="root">
+    <div >
      
       <RouterProvider router={Router}></RouterProvider>
     </div>

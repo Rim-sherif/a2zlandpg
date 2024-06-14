@@ -1,5 +1,7 @@
 import React from "react";
-
+import { useState } from "react";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import Navbar from "../Navbar/Navbar";
 import img1 from "../../assets/Layer.png";
 import img2 from "../../assets/Layer_1 (1).png";
@@ -20,7 +22,11 @@ import i7 from "../../assets/s7.jpg";
 import i8 from "../../assets/s8.jpg";
 import i9 from "../../assets/s9.jpg";
 
+import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+
 export default function Services() {
+  const [key, setKey] = useState("home");
   return (
     <>
       <Navbar />
@@ -47,12 +53,7 @@ export default function Services() {
               <p className=" text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+           
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge  p-3 mb-4">
@@ -62,12 +63,7 @@ export default function Services() {
               <p className="text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+             
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge p-3 mb-4">
@@ -77,12 +73,7 @@ export default function Services() {
               <p className="mb-3 text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+             
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge p-3  mb-4">
@@ -92,12 +83,7 @@ export default function Services() {
               <p className=" mb-3 text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+            
             </div>
           </div>
           <div className="row gy-2 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
@@ -109,12 +95,7 @@ export default function Services() {
               <p className=" text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+           
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge  p-3 mb-4">
@@ -124,12 +105,7 @@ export default function Services() {
               <p className=" text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+           
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge  p-3 mb-4">
@@ -139,12 +115,7 @@ export default function Services() {
               <p className=" text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+          
             </div>
             <div className="services col-11 col-sm-6 col-lg-2">
               <div className="badge p-3 mb-4">
@@ -154,17 +125,12 @@ export default function Services() {
               <p className=" text-secondary">
                 Attain's Bots work alongside your team members to
               </p>
-              <a
-                href="#!"
-                className="fw-bold text-decoration-none link-primary"
-              >
-                Learn More
-              </a>
+            
             </div>
           </div>
         </div>
       </section>
-      <div className="card-deck py-3 py-xl-8">
+      <div className="card-deck py-1 py-xl-5">
         <div className="container overflow-hidden">
         <div className="row justify-content-md-center">
             <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -174,6 +140,74 @@ export default function Services() {
               <hr className="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
             </div>
           </div>
+          <div class="col-md-12">
+            <div id="navigation-tab">
+              <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+                className="mb-3 justify-content-center tab-nav"
+              >
+                <Tab eventKey="home" title="Design" className="text-dark">
+                <div class="row">
+										<div class="col-md-12">
+                     
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Electrical" title="Electrical" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Carpentry" title="Carpentry" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="House siding" title="House siding" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Plumbing" title="Plumbing" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Painting" title="Painting" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Home repairs" title="Home repairs" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+                <Tab eventKey="Furniture assembly" title="Furniture assembly" className=" text-dark">
+                <div class="row">
+										<div class="col-md-12">
+											
+										</div>
+									</div>
+                </Tab>
+               
+                </Tabs>
+  </div>
+</div>
           <div className="row">
             <div className="col-12 col-md-4">
               <div className="card">
@@ -196,8 +230,8 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
-                        View Profile
+                      <button type="button" className="btn btn-bn btn-sm">
+                        <Link className="a" to="/profile">View Profile</Link>
                       </button>
                       <button
                         type="button"
@@ -234,7 +268,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -272,7 +306,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -312,7 +346,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -350,7 +384,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -388,7 +422,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -428,7 +462,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -466,7 +500,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -504,7 +538,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="col-md-12 d-flex mt-2 ">
-                      <button type="button" className="btn btn-primary btn-sm">
+                      <button type="button" className="btn btn-bn btn-sm">
                         View Profile
                       </button>
                       <button
@@ -524,6 +558,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

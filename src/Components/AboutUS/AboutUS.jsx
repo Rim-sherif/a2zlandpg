@@ -32,7 +32,7 @@ export default function AboutUs() {
                     <Link to="/shop" className="btn btn-secondary me-2 a">
                       Shop Now
                     </Link>
-                    <Link href="#" className="btn btn-white-outline">
+                    <Link href="/exploring" className="btn btn-white-outline">
                       Explore
                     </Link>
                   </p>
@@ -116,9 +116,9 @@ export default function AboutUs() {
                   <li>Donec vitae odio quis nisl dapibus malesuada</li>
                 </ul>
                 <p>
-                  <Link to="/exploring" className="btn btn-primary">
-                    Explore
-                  </Link>
+                <Link to="#" className="btn btn-dark mt-5">
+                  Explore
+                </Link>
                 </p>
               </div>
             </div>
